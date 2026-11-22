@@ -1,0 +1,131 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>For Pop Pop · Roots & Wings</title><style>
+@font-face{font-family:'Atkinson';src:url('../fonts/atkinson-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Atkinson';src:url('../fonts/atkinson-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Atkinson';src:url('../fonts/atkinson-400i.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('../fonts/fraunces.woff2') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('../fonts/fraunces-i.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
+:root{--bg:#f5eee2;--card:#fffaf2;--ink:#2a241e;--soft:#5c5247;--line:#d9ccb8;--gold:#9a6b25;--forest:#2f4a3a;--field:#fffdf8;--focus:#c58a2e}
+html.night{--bg:#15120e;--card:#1e1a15;--ink:#f1e8da;--soft:#c4b8a6;--line:#3b342b;--gold:#d9a956;--forest:#9cc2a6;--field:#191510;--focus:#d9a956}
+*{box-sizing:border-box}
+html{font-size:20px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Atkinson',system-ui,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.1rem 5rem}
+.bar{position:sticky;top:0;z-index:5;display:flex;gap:.5rem;justify-content:flex-end;padding:.6rem 1rem;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar .saved{margin-right:auto;align-self:center;color:var(--soft);font-size:.8rem}
+button,.btn{font:inherit;font-size:.95rem;cursor:pointer;border-radius:.6rem;border:2px solid var(--forest);background:transparent;color:var(--forest);padding:.55rem 1rem;min-height:2.8rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.btn.primary,button.primary{background:var(--forest);color:var(--bg)}
+button:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+header.hero{text-align:center;padding:3rem 0 1.5rem}
+.mark{width:5.5rem;height:6.4rem;color:var(--gold)}
+.brand{font-family:'Fraunces',serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-size:.85rem;margin:.6rem 0 0}
+h1{font-family:'Fraunces',serif;font-weight:500;font-size:2.6rem;line-height:1.1;margin:.4rem 0 .2rem}
+.sub{color:var(--soft);font-style:italic;margin:0}
+.letter{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.6rem 1.6rem 1.2rem;margin:1.5rem 0 2rem;font-size:1.05rem}
+.letter p{margin:0 0 1rem}
+.how{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));margin:0 0 2rem}
+.how div{background:var(--card);border:1px solid var(--line);border-radius:.9rem;padding:1rem}
+.how b{display:block;font-family:'Fraunces',serif;color:var(--gold);font-size:1.5rem;line-height:1}
+section.part{margin:2.6rem 0}
+h2{font-family:'Fraunces',serif;font-weight:500;font-size:1.75rem;margin:0 0 .3rem;color:var(--forest)}
+.intro{color:var(--soft);margin:0 0 1rem}
+.field{margin:0 0 1.2rem}
+label{display:block;font-weight:700;margin:0 0 .15rem}
+.hint{display:block;color:var(--soft);font-size:.85rem;margin:0 0 .35rem}
+input,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:2px solid var(--line);border-radius:.6rem;padding:.65rem .8rem}
+textarea{resize:vertical;line-height:1.5}
+.qs{list-style:none;padding:0;margin:0}
+.qs li{display:flex;gap:.8rem;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:.8rem 1rem;margin:0 0 .6rem}
+.qs li span{flex:1}
+.star{min-height:2.4rem;padding:.3rem .7rem;font-size:.85rem;white-space:nowrap}
+.star[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+.photos ul{margin:.2rem 0 1.2rem 1.2rem;padding:0}
+.photos li{margin:.2rem 0}
+.ways{display:grid;gap:.8rem;margin:1rem 0}
+.way{background:var(--card);border:1px solid var(--line);border-radius:.9rem;padding:1rem 1.1rem}
+.way p{margin:.2rem 0 .7rem}
+.send{background:var(--card);border:2px solid var(--gold);border-radius:1rem;padding:1.4rem;text-align:center}
+.send .row{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1rem 0 .4rem}
+.note{color:var(--soft);font-size:.85rem}
+#msg{min-height:1.4rem;font-weight:700;color:var(--forest)}
+footer{text-align:center;color:var(--soft);font-size:.85rem;margin-top:3rem}
+footer q{font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:var(--ink)}
+html[lang=en] .es{display:none} html[lang=es] .en{display:none}
+#print-sheet{display:none}
+@media print{body{background:#fff;color:#000}.bar,.wrap>*:not(#print-sheet){display:none!important}#print-sheet{display:block;white-space:pre-wrap;font-size:12pt;line-height:1.5}}
+.doors{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));margin:2rem 0}
+.side{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
+.side h2{font-size:1.4rem}
+.side a{display:block;margin:.6rem 0;font-weight:700;color:var(--forest);font-size:1.1rem}
+</style></head><body>
+<div class="bar"><span class="saved" id="saved"></span><button type="button" id="night">Day / Night</button></div>
+<div class="wrap">
+<header class="hero"><svg class="mark" viewBox="0 0 120 140" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+<path d="M60 128V62"/><path d="M60 92c-10-8-22-10-34-8M60 82c10-9 22-12 35-10M60 72c-7-10-16-16-28-19M60 66c6-11 15-17 27-21M60 62c-2-12-1-24 0-34"/>
+<path d="M26 84c-6-6-9-14-9-22M95 72c6-6 9-13 9-21M32 53c-3-8-2-16 2-23M87 45c3-8 2-15-2-22"/>
+<path d="M60 128c-6 4-14 6-24 6M60 128c6 4 14 6 24 6M60 128c-2 5-6 8-12 10M60 128c2 5 6 8 12 10"/></g>
+<g fill="currentColor"><circle cx="60" cy="24" r="5"/><circle cx="17" cy="60" r="3.6"/><circle cx="104" cy="49" r="3.6"/><circle cx="34" cy="28" r="3.6"/><circle cx="85" cy="21" r="3.6"/><circle cx="26" cy="84" r="3"/><circle cx="95" cy="72" r="3"/></g></svg><p class="brand">Roots &amp; Wings · The Hager Family Story</p><h1>For Pop Pop</h1><p class="sub">Help us build the family tree</p></header>
+<div class="letter"><p>Hi Dad,</p><p>Pixie and I have started something for the boys, and we would love your help with it. We are gathering the story of our family, all of it: who we come from, where everyone was born, how everyone met, the faces and the places. One day Hudson and Hendrix will have the whole thing in their hands, a family tree with real pictures and real voices.</p><p>You are the photographer of this family, so you are already holding a big piece of it: your mom and dad, Marty and Betty, through your lens. There is a section just for them, and a section about you behind the camera.</p><p>Fill in whatever you know, skip whatever you don't, and come back as often as you like. It remembers your answers on this device. Near the bottom are some bigger questions we would love to talk through with you in person, and a way to send us pictures.</p><p>Love you,<br>Christopher</p></div>
+<div class="how">
+<div><b>1</b>Fill in what you know. Skip the rest. It saves as you type.</div>
+<div><b>2</b>Tap the bigger questions you would enjoy talking about together.</div>
+<div><b>3</b>Send us pictures, then press Send at the bottom.</div>
+</div>
+<section class="part" id="you"><h2>All about you</h2><p class="intro">The basics first. Skip anything you like.</p><div class="field"><label for="you.fullname">Your full name</label><span class="hint">Including any last name you were born with</span><input id="you.fullname" data-f="you.fullname" type="text" autocomplete="off"></div><div class="field"><label for="you.called">What people call you</label><span class="hint">Nicknames, and what the grandkids call you</span><input id="you.called" data-f="you.called" type="text" autocomplete="off"></div><div class="field"><label for="you.birthday">Your birthday</label><span class="hint">Month, day and year</span><input id="you.birthday" data-f="you.birthday" type="text" autocomplete="off"></div><div class="field"><label for="you.birthplace">Where you were born</label><span class="hint">City, state or country, and the hospital if you know it</span><input id="you.birthplace" data-f="you.birthplace" type="text" autocomplete="off"></div><div class="field"><label for="you.grewup">Where you grew up</label><span class="hint">The town, the neighborhood, the house</span><textarea id="you.grewup" data-f="you.grewup" rows="3"></textarea></div><div class="field"><label for="you.color">Your favorite color</label><input id="you.color" data-f="you.color" type="text" autocomplete="off"></div><div class="field"><label for="you.food">Your favorite food, and the dish you are known for</label><input id="you.food" data-f="you.food" type="text" autocomplete="off"></div><div class="field"><label for="you.music">Your favorite song or music</label><input id="you.music" data-f="you.music" type="text" autocomplete="off"></div><div class="field"><label for="you.movie">Your favorite movie or show</label><input id="you.movie" data-f="you.movie" type="text" autocomplete="off"></div><div class="field"><label for="you.book">Your favorite book</label><input id="you.book" data-f="you.book" type="text" autocomplete="off"></div><div class="field"><label for="you.place">Your favorite place on earth</label><input id="you.place" data-f="you.place" type="text" autocomplete="off"></div><div class="field"><label for="you.holiday">Your favorite holiday, and how you celebrate it</label><textarea id="you.holiday" data-f="you.holiday" rows="2"></textarea></div><div class="field"><label for="you.words">Three words your friends would use to describe you</label><input id="you.words" data-f="you.words" type="text" autocomplete="off"></div></section>
+<section class="part" id="parents"><h2>Your parents, Marty and Betty</h2><p class="intro">The next branch up the tree, and the one the boys know least.</p><div class="field"><label for="parents.marty">Marty</label><span class="hint">His full name, birthday, where he was born and grew up, his work. If he has passed, when and where.</span><textarea id="parents.marty" data-f="parents.marty" rows="5"></textarea></div><div class="field"><label for="parents.betty">Betty</label><span class="hint">Her full name (including her maiden name), birthday, where she was born and grew up, her work. If she has passed, when and where.</span><textarea id="parents.betty" data-f="parents.betty" rows="5"></textarea></div><div class="field"><label for="parents.met">How Marty and Betty met</label><textarea id="parents.met" data-f="parents.met" rows="3"></textarea></div><div class="field"><label for="parents.married">Where and when they married</label><input id="parents.married" data-f="parents.married" type="text" autocomplete="off"></div><div class="field"><label for="parents.home">Where they lived, and where you grew up with them</label><textarea id="parents.home" data-f="parents.home" rows="3"></textarea></div><div class="field"><label for="parents.photos">Your photographs of them</label><span class="hint">Which pictures of Marty and Betty would you most want the boys to see? Tell us the story behind each one.</span><textarea id="parents.photos" data-f="parents.photos" rows="5"></textarea></div></section>
+<section class="part" id="grandparents"><h2>Your grandparents</h2><p class="intro">Even a name and a town is a gift. A memory is a treasure.</p><div class="field"><label for="grandparents.mm">Marty's mother</label><span class="hint">Name, where they came from, and anything you remember about them</span><textarea id="grandparents.mm" data-f="grandparents.mm" rows="3"></textarea></div><div class="field"><label for="grandparents.mf">Marty's father</label><span class="hint">Name, where they came from, and anything you remember about them</span><textarea id="grandparents.mf" data-f="grandparents.mf" rows="3"></textarea></div><div class="field"><label for="grandparents.fm">Betty's mother</label><span class="hint">Name, where they came from, and anything you remember about them</span><textarea id="grandparents.fm" data-f="grandparents.fm" rows="3"></textarea></div><div class="field"><label for="grandparents.ff">Betty's father</label><span class="hint">Name, where they came from, and anything you remember about them</span><textarea id="grandparents.ff" data-f="grandparents.ff" rows="3"></textarea></div></section>
+<section class="part" id="siblings"><h2>Brothers and sisters</h2><div class="field"><label for="siblings.sibs">Your brothers and sisters</label><span class="hint">For each one: full name, birthday, where they live now, and the names of their husband or wife and children.</span><textarea id="siblings.sibs" data-f="siblings.sibs" rows="6"></textarea></div></section>
+<section class="part" id="family"><h2>Your family</h2><div class="field"><label for="family.children">Your children</label><span class="hint">Names, birthdays, and where each one was born</span><textarea id="family.children" data-f="family.children" rows="3"></textarea></div><div class="field"><label for="family.cborn">The day Christopher was born</label><span class="hint">The date, the time if you remember it, the hospital and the city, who was there, and what you remember most</span><textarea id="family.cborn" data-f="family.cborn" rows="5"></textarea></div><div class="field"><label for="family.cname">How Christopher got his name</label><textarea id="family.cname" data-f="family.cname" rows="2"></textarea></div></section>
+<section class="part" id="camera"><h2>You, behind the camera</h2><div class="field"><label for="camera.start">How you started taking pictures</label><textarea id="camera.start" data-f="camera.start" rows="3"></textarea></div><div class="field"><label for="camera.first">Your first camera</label><input id="camera.first" data-f="camera.first" type="text" autocomplete="off"></div><div class="field"><label for="camera.proud">The photograph you are proudest of, and why</label><textarea id="camera.proud" data-f="camera.proud" rows="3"></textarea></div><div class="field"><label for="camera.archive">Where your photographs live now</label><span class="hint">Prints, negatives, slides, hard drives, online. A rough idea is plenty.</span><textarea id="camera.archive" data-f="camera.archive" rows="3"></textarea></div></section>
+<section class="part" id="places"><h2>Where life has taken you</h2><div class="field"><label for="places.lived">Every place you have lived</label><span class="hint">In order, as best you remember: the city, the years, and one thing about each home.</span><textarea id="places.lived" data-f="places.lived" rows="6"></textarea></div><div class="field"><label for="places.roots">Where the family comes from</label><span class="hint">Countries, towns, and how the family got to where it is now.</span><textarea id="places.roots" data-f="places.roots" rows="4"></textarea></div></section>
+<section class="part" id="treasures"><h2>Traditions and treasures</h2><div class="field"><label for="treasures.recipes">Recipes worth keeping</label><span class="hint">The name is enough for now. We will ask for the details later.</span><textarea id="treasures.recipes" data-f="treasures.recipes" rows="3"></textarea></div><div class="field"><label for="treasures.traditions">Holiday and family traditions</label><textarea id="treasures.traditions" data-f="treasures.traditions" rows="3"></textarea></div><div class="field"><label for="treasures.sayings">Sayings, blessings or words of wisdom from your family</label><textarea id="treasures.sayings" data-f="treasures.sayings" rows="3"></textarea></div><div class="field"><label for="treasures.heirlooms">Treasures that have been passed down</label><span class="hint">Jewelry, letters, a Bible with names written in it, a quilt, anything with a story.</span><textarea id="treasures.heirlooms" data-f="treasures.heirlooms" rows="3"></textarea></div></section>
+<section class="part" id="talk"><h2>For when we are together</h2>
+<p class="intro">No need to write these down. Read them ahead so they can simmer, and tap the ones you would love to talk about. We will bring a recorder so the boys can hear your voice telling it.</p>
+<ul class="qs"><li><span>What is your earliest memory?</span><button type="button" class="star" data-q="star.0" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What was your house like growing up? Walk us through it, room by room.</span><button type="button" class="star" data-q="star.1" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What were your parents like? What did you learn from each of them?</span><button type="button" class="star" data-q="star.2" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What was Marty like as a dad? And Betty as a mom?</span><button type="button" class="star" data-q="star.3" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>How did you fall in love with photography?</span><button type="button" class="star" data-q="star.4" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What is the one photograph you wish you had taken?</span><button type="button" class="star" data-q="star.5" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>How did you and Grandma Patty meet?</span><button type="button" class="star" data-q="star.6" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What was Christopher like as a boy?</span><button type="button" class="star" data-q="star.7" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What did your working life look like, from your first job on?</span><button type="button" class="star" data-q="star.8" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What is the hardest thing you have lived through, and what got you through it?</span><button type="button" class="star" data-q="star.9" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What are you most proud of?</span><button type="button" class="star" data-q="star.10" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What do you know now that you wish you had known at 20?</span><button type="button" class="star" data-q="star.11" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>Is there a family story everybody retells?</span><button type="button" class="star" data-q="star.12" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li><li><span>What do you hope Hudson and Hendrix carry from our family?</span><button type="button" class="star" data-q="star.13" aria-pressed="false"><span class="off">I would love to talk about this</span><span class="on" hidden>Yes, this one ★</span></button></li></ul></section>
+<section class="part photos" id="photos"><h2>Pictures</h2>
+<p class="intro">What we are hoping for:</p><ul><li>Marty and Betty, every one you are willing to share</li><li>Your own favorite photographs of the family</li><li>You as a baby and a child</li><li>Christopher as a baby and growing up</li><li>Big family days: weddings, holidays, reunions</li><li>The houses and towns you lived in</li><li>Old letters, documents and recipe cards</li></ul>
+<div class="ways">
+<div class="way"><b>Easiest: reply to the email with pictures attached</b><p>A few at a time is perfect. Phone photos of old prints are welcome too.</p></div>
+<div class="way"><b>Lots of pictures? Use your own folder</b><p>We made a Google Drive folder just for you. Sign in with your Google account, open it, and drag pictures in.</p><a class="btn" href="https://drive.google.com/drive/folders/1D8-TdcI5whn_AeURU2l66NIO3GKZ3B_e" target="_blank" rel="noopener">Open my photo folder</a></div>
+<div class="way"><b>Prints and albums</b><p>Big archive? Start with ten favorites and the best ones of Marty and Betty. Prints, negatives and slides can wait until we see you, and we will go through them together.</p></div>
+</div></section>
+<section class="send" id="send"><h2>Send your answers</h2>
+<p>Done for now, or done for good? Either way, send what you have. You can always come back and send more.</p>
+<div class="row"><button type="button" class="primary" id="mail">Email my answers to Christopher</button><button type="button" id="copy">Copy my answers</button><button type="button" id="print">Print</button></div>
+<p id="msg" role="status"></p>
+<p class="note">Your answers stay on your own device until you press Send. Nothing you type is saved on this website.</p></section>
+<footer><q>There are two lasting bequests we can give our children. One is roots. The other is wings.</q><br>Often attributed to Hodding Carter</footer>
+<div id="print-sheet"></div>
+</div><script>
+(function(){
+var KEY='roots-wings-'+"pop-pop";
+var data={};try{data=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+var root=document.documentElement;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(data));var s=document.getElementById('saved');var l=root.lang;s.textContent=l==='es'?'Guardado en este aparato':'Saved on this device';}catch(e){}}
+var timer;function later(){clearTimeout(timer);timer=setTimeout(save,400)}
+if(data._night)root.classList.add('night');
+
+function ph(){document.querySelectorAll('[data-ph-en]').forEach(function(el){el.placeholder=root.lang==='es'?(el.dataset.phEs||el.dataset.phEn):el.dataset.phEn})}
+ph();
+document.querySelectorAll('[data-f]').forEach(function(el){var k=el.dataset.f;if(data[k])el.value=data[k];el.addEventListener('input',function(){data[k]=el.value;later()})});
+document.querySelectorAll('.star').forEach(function(b){var k=b.dataset.q;function paint(){var on=!!data[k];b.setAttribute('aria-pressed',on);b.querySelector('.on').hidden=!on;b.querySelector('.off').hidden=on}paint();b.addEventListener('click',function(){data[k]=!data[k];paint();save()})});
+document.getElementById('night').addEventListener('click',function(){root.classList.toggle('night');data._night=root.classList.contains('night');save()});
+var lb=document.getElementById('lang');if(lb)lb.addEventListener('click',function(){root.lang=root.lang==='es'?'en':'es';data._lang=root.lang;ph();save()});
+function vis(el){if(!el)return'';var s=el.querySelector('.'+root.lang);return(s||el).textContent.trim()}
+function compose(){var out=[];var es=root.lang==='es';
+out.push((es?'Respuestas de ':'Answers from ')+"Pop Pop");out.push('');
+document.querySelectorAll('section.part').forEach(function(sec){var lines=[];
+sec.querySelectorAll('.field').forEach(function(f){var inp=f.querySelector('[data-f]');var v=inp&&inp.value.trim();if(v)lines.push(vis(f.querySelector('label'))+':\n'+v+'\n')});
+var st=[];sec.querySelectorAll('.star').forEach(function(b){if(data[b.dataset.q])st.push('* '+vis(b.parentNode.querySelector('span')))});
+if(st.length)lines.push((es?'Me gustaría hablar de:':'I would love to talk about:')+'\n'+st.join('\n')+'\n');
+if(lines.length){out.push('== '+vis(sec.querySelector('h2')).toUpperCase()+' ==');out.push('');out=out.concat(lines)}});
+return out.join('\n')}
+function copy(text){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);return Promise.resolve()}
+function msg(en,es){document.getElementById('msg').textContent=root.lang==='es'?es:en}
+document.getElementById('copy').addEventListener('click',function(){copy(compose()).then(function(){msg('Copied. Paste it into an email to Christopher.','Copiado. Pégalo en un correo para Christopher.')})});
+document.getElementById('mail').addEventListener('click',function(){var body=compose();var to=['chris.a.hager','gmail.com'].join('@');var subj=(root.lang==='es'?'Raíces y Alas: respuestas de ':'Roots & Wings: answers from ')+"Pop Pop";
+copy(body).finally(function(){msg('Your email is opening. Your answers are also copied, so if the email looks short, just paste.','Se está abriendo tu correo. Tus respuestas también están copiadas; si el correo se ve incompleto, solo pega.');location.href='mailto:'+to+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body)})});
+document.getElementById('print').addEventListener('click',function(){window.print()});
+window.addEventListener('beforeprint',function(){document.getElementById('print-sheet').textContent=compose()});
+})();</script></body></html>
