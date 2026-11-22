@@ -1,34 +1,42 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <title>For Pop Pop · Roots & Wings</title><style>
-@font-face{font-family:'Atkinson';src:url('../fonts/atkinson-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Atkinson';src:url('../fonts/atkinson-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:'Atkinson';src:url('../fonts/atkinson-400i.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:'Fraunces';src:url('../fonts/fraunces.woff2') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
-@font-face{font-family:'Fraunces';src:url('../fonts/fraunces-i.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
-:root{--bg:#f5eee2;--card:#fffaf2;--ink:#2a241e;--soft:#5c5247;--line:#d9ccb8;--gold:#9a6b25;--forest:#2f4a3a;--field:#fffdf8;--focus:#c58a2e}
-html.night{--bg:#15120e;--card:#1e1a15;--ink:#f1e8da;--soft:#c4b8a6;--line:#3b342b;--gold:#d9a956;--forest:#9cc2a6;--field:#191510;--focus:#d9a956}
+@font-face{font-family:'DM Sans';src:url('../fonts/DMSans-f6298972.woff2') format('woff2');font-weight:100 1000;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url('../fonts/InstrumentSerif-99cc6edf.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url('../fonts/InstrumentSerif-fa1a1a83.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Space Grotesk';src:url('../fonts/SpaceGrotesk-a57c9413.woff2') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
+:root{--crown:#1B0C20;--crown2:#2A1130;--mystic:#3B1A4C;--triton:#7C2D50;--ankh:#A57626;--ankhhi:#D9A648;--mirror:#E7E7E7;
+--bg:#FBF8F4;--card:#fff;--ink:#1B0C20;--soft:#584C5E;--line:rgba(27,12,32,.16);--gold:#A57626;--accent:#3B1A4C;--field:#fff;--focus:#A57626;--btnink:#FBF8F4}
+html.night{--bg:#1B0C20;--card:#2A1130;--ink:#F3EEF4;--soft:rgba(231,231,231,.74);--line:rgba(231,231,231,.16);--gold:#D9A648;--accent:#D8BFEA;--field:#22102A;--focus:#D9A648;--btnink:#1B0C20}
 *{box-sizing:border-box}
 html{font-size:20px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Atkinson',system-ui,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.65;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased}
 .wrap{max-width:46rem;margin:0 auto;padding:0 1.1rem 5rem}
-.bar{position:sticky;top:0;z-index:5;display:flex;gap:.5rem;justify-content:flex-end;padding:.6rem 1rem;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.bar .saved{margin-right:auto;align-self:center;color:var(--soft);font-size:.8rem}
-button,.btn{font:inherit;font-size:.95rem;cursor:pointer;border-radius:.6rem;border:2px solid var(--forest);background:transparent;color:var(--forest);padding:.55rem 1rem;min-height:2.8rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
-.btn.primary,button.primary{background:var(--forest);color:var(--bg)}
+.bar{position:sticky;top:0;z-index:5;display:flex;gap:.5rem;justify-content:flex-end;padding:.55rem 1rem;background:var(--crown);border-bottom:1px solid rgba(217,166,72,.35)}
+.bar .saved{margin-right:auto;align-self:center;color:rgba(231,231,231,.7);font-size:.8rem}
+.bar button{border-color:rgba(217,166,72,.6);color:var(--ankhhi);min-height:2.5rem;font-size:.85rem}
+button,.btn{font:inherit;font-size:.95rem;cursor:pointer;border-radius:.6rem;border:2px solid var(--accent);background:transparent;color:var(--accent);padding:.55rem 1rem;min-height:2.8rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.btn.primary,button.primary{background:var(--accent);color:var(--btnink)}
+html.night button.primary{background:var(--gold);border-color:var(--gold)}
 button:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-header.hero{text-align:center;padding:3rem 0 1.5rem}
-.mark{width:5.5rem;height:6.4rem;color:var(--gold)}
-.brand{font-family:'Fraunces',serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-size:.85rem;margin:.6rem 0 0}
-h1{font-family:'Fraunces',serif;font-weight:500;font-size:2.6rem;line-height:1.1;margin:.4rem 0 .2rem}
-.sub{color:var(--soft);font-style:italic;margin:0}
-.letter{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.6rem 1.6rem 1.2rem;margin:1.5rem 0 2rem;font-size:1.05rem}
+header.hero{position:relative;overflow:hidden;color:var(--mirror);text-align:center;padding:3rem 1.1rem 2.6rem;background:radial-gradient(ellipse 120% 100% at 50% 20%,#1B0C20 0%,#2A1130 60%,#3B1A4C 100%)}
+header.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(rgba(231,231,231,.10) 1px,transparent 1.2px);background-size:7px 7px}
+header.hero>*{position:relative;z-index:1}
+.lockup{display:inline-flex;align-items:center;gap:1rem}
+.hmark{width:68px;height:76px;overflow:hidden;flex:none}
+.hmark img{height:76px;width:auto;display:block}
+.lrule{width:1px;height:58px;background:rgba(217,166,72,.7)}
+.fam{font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:.42em;text-transform:uppercase;font-size:1.35rem;color:var(--mirror);padding-left:.1em}
+.brand{font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ankhhi);font-size:.72rem;margin:1.3rem 0 0}
+h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:3rem;line-height:1.05;margin:.35rem 0 .2rem;color:#fff}
+.sub{color:rgba(231,231,231,.78);font-family:'Instrument Serif',serif;font-style:italic;font-size:1.2rem;margin:0}
+.letter{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:1rem;padding:1.6rem 1.6rem 1.2rem;margin:2rem 0;font-size:1.05rem}
 .letter p{margin:0 0 1rem}
 .how{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));margin:0 0 2rem}
 .how div{background:var(--card);border:1px solid var(--line);border-radius:.9rem;padding:1rem}
-.how b{display:block;font-family:'Fraunces',serif;color:var(--gold);font-size:1.5rem;line-height:1}
-section.part{margin:2.6rem 0}
-h2{font-family:'Fraunces',serif;font-weight:500;font-size:1.75rem;margin:0 0 .3rem;color:var(--forest)}
+.how b{display:block;font-family:'Instrument Serif',serif;font-weight:400;color:var(--gold);font-size:2rem;line-height:1}
+section.part{margin:2.8rem 0}
+h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:2rem;line-height:1.15;margin:0 0 .3rem;color:var(--accent)}
 .intro{color:var(--soft);margin:0 0 1rem}
 .field{margin:0 0 1.2rem}
 label{display:block;font-weight:700;margin:0 0 .15rem}
@@ -39,7 +47,7 @@ textarea{resize:vertical;line-height:1.5}
 .qs li{display:flex;gap:.8rem;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:.8rem 1rem;margin:0 0 .6rem}
 .qs li span{flex:1}
 .star{min-height:2.4rem;padding:.3rem .7rem;font-size:.85rem;white-space:nowrap}
-.star[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+.star[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--btnink)}
 .photos ul{margin:.2rem 0 1.2rem 1.2rem;padding:0}
 .photos li{margin:.2rem 0}
 .ways{display:grid;gap:.8rem;margin:1rem 0}
@@ -48,24 +56,20 @@ textarea{resize:vertical;line-height:1.5}
 .send{background:var(--card);border:2px solid var(--gold);border-radius:1rem;padding:1.4rem;text-align:center}
 .send .row{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1rem 0 .4rem}
 .note{color:var(--soft);font-size:.85rem}
-#msg{min-height:1.4rem;font-weight:700;color:var(--forest)}
+#msg{min-height:1.4rem;font-weight:700;color:var(--accent)}
 footer{text-align:center;color:var(--soft);font-size:.85rem;margin-top:3rem}
-footer q{font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:var(--ink)}
+footer q{font-family:'Instrument Serif',serif;font-style:italic;font-size:1.25rem;color:var(--ink)}
 html[lang=en] .es{display:none} html[lang=es] .en{display:none}
 #print-sheet{display:none}
-@media print{body{background:#fff;color:#000}.bar,.wrap>*:not(#print-sheet){display:none!important}#print-sheet{display:block;white-space:pre-wrap;font-size:12pt;line-height:1.5}}
+@media print{body{background:#fff;color:#000}.bar,header.hero,.wrap>*:not(#print-sheet){display:none!important}#print-sheet{display:block;white-space:pre-wrap;font-size:12pt;line-height:1.5}}
 .doors{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));margin:2rem 0}
-.side{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
-.side h2{font-size:1.4rem}
-.side a{display:block;margin:.6rem 0;font-weight:700;color:var(--forest);font-size:1.1rem}
+.side{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:1rem;padding:1.3rem}
+.side h2{font-size:1.6rem}
+.side a{display:block;margin:.6rem 0;font-weight:700;color:var(--accent);font-size:1.1rem}
 </style></head><body>
 <div class="bar"><span class="saved" id="saved"></span><button type="button" id="night">Day / Night</button></div>
+<header class="hero"><div class="lockup"><span class="hmark"><img src="../brand/logo-inline-light.png" alt="H"></span><span class="lrule"></span><span class="fam">Family</span></div><p class="brand">Roots &amp; Wings · The Hager Family Story</p><h1>For Pop Pop</h1><p class="sub">Help us build the family tree</p></header>
 <div class="wrap">
-<header class="hero"><svg class="mark" viewBox="0 0 120 140" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
-<path d="M60 128V62"/><path d="M60 92c-10-8-22-10-34-8M60 82c10-9 22-12 35-10M60 72c-7-10-16-16-28-19M60 66c6-11 15-17 27-21M60 62c-2-12-1-24 0-34"/>
-<path d="M26 84c-6-6-9-14-9-22M95 72c6-6 9-13 9-21M32 53c-3-8-2-16 2-23M87 45c3-8 2-15-2-22"/>
-<path d="M60 128c-6 4-14 6-24 6M60 128c6 4 14 6 24 6M60 128c-2 5-6 8-12 10M60 128c2 5 6 8 12 10"/></g>
-<g fill="currentColor"><circle cx="60" cy="24" r="5"/><circle cx="17" cy="60" r="3.6"/><circle cx="104" cy="49" r="3.6"/><circle cx="34" cy="28" r="3.6"/><circle cx="85" cy="21" r="3.6"/><circle cx="26" cy="84" r="3"/><circle cx="95" cy="72" r="3"/></g></svg><p class="brand">Roots &amp; Wings · The Hager Family Story</p><h1>For Pop Pop</h1><p class="sub">Help us build the family tree</p></header>
 <div class="letter"><p>Hi Dad,</p><p>Pixie and I have started something for the boys, and we would love your help with it. We are gathering the story of our family, all of it: who we come from, where everyone was born, how everyone met, the faces and the places. One day Hudson and Hendrix will have the whole thing in their hands, a family tree with real pictures and real voices.</p><p>You are the photographer of this family, so you are already holding a big piece of it: your mom and dad, Marty and Betty, through your lens. There is a section just for them, and a section about you behind the camera.</p><p>Fill in whatever you know, skip whatever you don't, and come back as often as you like. It remembers your answers on this device. Near the bottom are some bigger questions we would love to talk through with you in person, and a way to send us pictures.</p><p>Love you,<br>Christopher</p></div>
 <div class="how">
 <div><b>1</b>Fill in what you know. Skip the rest. It saves as you type.</div>
@@ -86,6 +90,7 @@ html[lang=en] .es{display:none} html[lang=es] .en{display:none}
 <section class="part photos" id="photos"><h2>Pictures</h2>
 <p class="intro">What we are hoping for:</p><ul><li>Marty and Betty, every one you are willing to share</li><li>Your own favorite photographs of the family</li><li>You as a baby and a child</li><li>Christopher as a baby and growing up</li><li>Big family days: weddings, holidays, reunions</li><li>The houses and towns you lived in</li><li>Old letters, documents and recipe cards</li></ul>
 <div class="ways">
+
 <div class="way"><b>Easiest: reply to the email with pictures attached</b><p>A few at a time is perfect. Phone photos of old prints are welcome too.</p></div>
 <div class="way"><b>Lots of pictures? Use your own folder</b><p>We made a Google Drive folder just for you. Sign in with your Google account, open it, and drag pictures in.</p><a class="btn" href="https://drive.google.com/drive/folders/1D8-TdcI5whn_AeURU2l66NIO3GKZ3B_e" target="_blank" rel="noopener">Open my photo folder</a></div>
 <div class="way"><b>Prints and albums</b><p>Big archive? Start with ten favorites and the best ones of Marty and Betty. Prints, negatives and slides can wait until we see you, and we will go through them together.</p></div>
@@ -126,6 +131,7 @@ function msg(en,es){document.getElementById('msg').textContent=root.lang==='es'?
 document.getElementById('copy').addEventListener('click',function(){copy(compose()).then(function(){msg('Copied. Paste it into an email to Christopher.','Copiado. Pégalo en un correo para Christopher.')})});
 document.getElementById('mail').addEventListener('click',function(){var body=compose();var to=['chris.a.hager','gmail.com'].join('@');var subj=(root.lang==='es'?'Raíces y Alas: respuestas de ':'Roots & Wings: answers from ')+"Pop Pop";
 copy(body).finally(function(){msg('Your email is opening. Your answers are also copied, so if the email looks short, just paste.','Se está abriendo tu correo. Tus respuestas también están copiadas; si el correo se ve incompleto, solo pega.');location.href='mailto:'+to+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body)})});
+var wa=document.getElementById('wa');if(wa)wa.addEventListener('click',function(){var body=compose();copy(body).finally(function(){msg('WhatsApp is opening. Pick Shirley and press send. Your answers are also copied.','Se está abriendo WhatsApp. Escoge a Shirley y presiona enviar. Tus respuestas también están copiadas.');location.href='https://wa.me/?text='+encodeURIComponent(body)})});
 document.getElementById('print').addEventListener('click',function(){window.print()});
 window.addEventListener('beforeprint',function(){document.getElementById('print-sheet').textContent=compose()});
 })();</script></body></html>
