@@ -1,6 +1,6 @@
 <!doctype html><html lang="en" class="night"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-<title>For Auntie Linda · Roots & Wings</title><style>
+<title>For Grantie Linda · Roots & Wings</title><style>
 @font-face{font-family:'DM Sans';src:url('../fonts/DMSans-f6298972.woff2') format('woff2');font-weight:100 1000;font-style:normal;font-display:swap}
 @font-face{font-family:'Instrument Serif';src:url('../fonts/InstrumentSerif-99cc6edf.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:'Instrument Serif';src:url('../fonts/InstrumentSerif-fa1a1a83.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
@@ -68,7 +68,7 @@ html[lang=en] .es{display:none} html[lang=es] .en{display:none}
 .side a{display:block;margin:.6rem 0;font-weight:700;color:var(--accent);font-size:1.1rem}
 </style></head><body>
 <div class="bar"><span class="saved" id="saved"></span><button type="button" id="night">Day / Night</button></div>
-<header class="hero"><div class="lockup"><span class="hmark"><img src="../brand/logo-inline-light.png" alt="H"></span><span class="lrule"></span><span class="fam">Family</span></div><p class="brand">Roots &amp; Wings · The Hager Family Story</p><h1>For Auntie Linda</h1><p class="sub">Help us build the family tree</p></header>
+<header class="hero"><div class="lockup"><span class="hmark"><img src="../brand/logo-inline-light.png" alt="H"></span><span class="lrule"></span><span class="fam">Family</span></div><p class="brand">Roots &amp; Wings · The Hager Family Story</p><h1>For Grantie Linda</h1><p class="sub">Help us build the family tree</p></header>
 <div class="wrap">
 <div class="letter"><p>Hi Auntie Linda,</p><p>Pixie and I have started something for the boys, and we would love your help with it. We are gathering the story of our family, all of it: who we come from, where everyone was born, how everyone met, the faces and the places. One day Hudson and Hendrix will have the whole thing in their hands, a family tree with real pictures and real voices.</p><p>You grew up right alongside Mom, so you hold a piece of this nobody else can: the Rumsey side, and what the two of you were like as girls. Mom has her own page with the same questions about your parents and grandparents, and two memories of the same people are better than one.</p><p>Fill in whatever you know, skip whatever you don’t, and come back as often as you like. It remembers your answers on this device. Near the bottom are some bigger questions we would love to talk through with you when we are together over the holidays, and a way to send us pictures.</p><p>With love,<br>Christopher</p></div>
 <div class="how">
@@ -104,7 +104,7 @@ html[lang=en] .es{display:none} html[lang=es] .en{display:none}
 <div id="print-sheet"></div>
 </div><script>
 (function(){
-var KEY='roots-wings-'+"auntie-linda";
+var KEY='roots-wings-'+"grantie-linda";
 var data={};try{data=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 var root=document.documentElement;
 function save(){try{localStorage.setItem(KEY,JSON.stringify(data));var s=document.getElementById('saved');var l=root.lang;s.textContent=l==='es'?'Guardado en este aparato':'Saved on this device';}catch(e){}}
@@ -119,7 +119,7 @@ document.getElementById('night').addEventListener('click',function(){root.classL
 var lb=document.getElementById('lang');if(lb)lb.addEventListener('click',function(){root.lang=root.lang==='es'?'en':'es';data._lang=root.lang;ph();save()});
 function vis(el){if(!el)return'';var s=el.querySelector('.'+root.lang);return(s||el).textContent.trim()}
 function compose(){var out=[];var es=root.lang==='es';
-out.push((es?'Respuestas de ':'Answers from ')+"Auntie Linda");out.push('');
+out.push((es?'Respuestas de ':'Answers from ')+"Grantie Linda");out.push('');
 document.querySelectorAll('section.part').forEach(function(sec){var lines=[];
 sec.querySelectorAll('.field').forEach(function(f){var inp=f.querySelector('[data-f]');var v=inp&&inp.value.trim();if(v)lines.push(vis(f.querySelector('label'))+':\n'+v+'\n')});
 var st=[];sec.querySelectorAll('.star').forEach(function(b){if(data[b.dataset.q])st.push('* '+vis(b.parentNode.querySelector('span')))});
@@ -129,7 +129,7 @@ return out.join('\n')}
 function copy(text){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);return Promise.resolve()}
 function msg(en,es){document.getElementById('msg').textContent=root.lang==='es'?es:en}
 document.getElementById('copy').addEventListener('click',function(){copy(compose()).then(function(){msg('Copied. Paste it into an email to Christopher.','Copiado. Pégalo en un correo para Christopher.')})});
-document.getElementById('mail').addEventListener('click',function(){var body=compose();var to=['chris.a.hager','gmail.com'].join('@');var subj=(root.lang==='es'?'Raíces y Alas: respuestas de ':'Roots & Wings: answers from ')+"Auntie Linda";
+document.getElementById('mail').addEventListener('click',function(){var body=compose();var to=['chris.a.hager','gmail.com'].join('@');var subj=(root.lang==='es'?'Raíces y Alas: respuestas de ':'Roots & Wings: answers from ')+"Grantie Linda";
 copy(body).finally(function(){msg('Your email is opening. Your answers are also copied, so if the email looks short, just paste.','Se está abriendo tu correo. Tus respuestas también están copiadas; si el correo se ve incompleto, solo pega.');location.href='mailto:'+to+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body)})});
 var wa=document.getElementById('wa');if(wa)wa.addEventListener('click',function(){var body=compose();copy(body).finally(function(){msg('WhatsApp is opening. Pick Shirley and press send. Your answers are also copied.','Se está abriendo WhatsApp. Escoge a Shirley y presiona enviar. Tus respuestas también están copiadas.');location.href='https://wa.me/?text='+encodeURIComponent(body)})});
 document.getElementById('print').addEventListener('click',function(){window.print()});
