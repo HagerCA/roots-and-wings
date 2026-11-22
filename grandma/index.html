@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en" class="night"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <title>For Grandma Patty · Roots & Wings</title><style>
 @font-face{font-family:'DM Sans';src:url('../fonts/DMSans-f6298972.woff2') format('woff2');font-weight:100 1000;font-style:normal;font-display:swap}
@@ -108,7 +108,7 @@ var data={};try{data=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 var root=document.documentElement;
 function save(){try{localStorage.setItem(KEY,JSON.stringify(data));var s=document.getElementById('saved');var l=root.lang;s.textContent=l==='es'?'Guardado en este aparato':'Saved on this device';}catch(e){}}
 var timer;function later(){clearTimeout(timer);timer=setTimeout(save,400)}
-if(data._night)root.classList.add('night');
+if(data._night===false)root.classList.remove('night');
 
 function ph(){document.querySelectorAll('[data-ph-en]').forEach(function(el){el.placeholder=root.lang==='es'?(el.dataset.phEs||el.dataset.phEn):el.dataset.phEn})}
 ph();
